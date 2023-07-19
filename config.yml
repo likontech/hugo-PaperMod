@@ -18,6 +18,8 @@ params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: likon
   description: "likon 的个人技术博客网站，主要专注大前端，记录技术、所思所想"
+  busuanzi:
+      enable: true
   # keywords: [Blog, Portfolio, PaperMod]
   # author: likon
   # author: ["Me", "You"] # multiple authors
@@ -121,10 +123,10 @@ params:
   #   keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    # - identifier: categories
-    #   name: 分类
-    #   url: /categories/
-    #   weight: 10
+    - identifier: categories
+      name: 分类
+      url: /categories/
+      weight: 10
     - identifier: tags
       name: 标签
       url: /tags/
