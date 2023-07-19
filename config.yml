@@ -16,8 +16,8 @@ theme: PaperMod
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  # title: Likon
-  # description: "ExampleSite description"
+  title: likon
+  description: "likon 的个人技术博客网站，主要专注大前端，记录技术、所思所想"
   # keywords: [Blog, Portfolio, PaperMod]
   # author: likon
   # author: ["Me", "You"] # multiple authors
