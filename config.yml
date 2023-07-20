@@ -13,6 +13,20 @@ theme: PaperMod
 # minify:
 #   disableXML: true
 #   minifyOutput: true
+# [languages]
+# [languages.en]
+# languageName = "English"
+# weight = 1
+
+# [languages.es]
+# languageName = "Spanish"
+# weight = 2
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
@@ -65,24 +79,24 @@ params:
   #   iconHeight: 35
 
   # profile-mode
-  # profileMode:
-  #   enabled: false # needs to be explicitly set
-  #   title: ExampleSite
-  #   subtitle: "This is subtitle"
-  #   imageUrl: "<img location>"
-  #   imageWidth: 120
-  #   imageHeight: 120
-  #   imageTitle: my image
-  #   buttons:
-  #     - name: Posts
-  #       url: posts
-  #     - name: Tags
-  #       url: tags
+  profileMode:
+    enabled: true # needs to be explicitly set
+    title: 岁岁年，碎碎念
+    subtitle: 学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知而不愠，不亦君子乎？
+    imageUrl: https://s3.bmp.ovh/imgs/2023/07/20/62a0f0eba6054110.png
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: likon
+    buttons:
+      - name: 博客
+        url: posts
+      - name: 标签
+        url: tags
 
   # home-info mode
-  homeInfoParams:
-    Title: "👏🏻 岁岁年年，碎碎念"
-    Content: 学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知而不愠，不亦君子乎？
+  # homeInfoParams:
+  #   Title: "👏🏻 岁岁年年，碎碎念"
+  #   Content: 学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知而不愠，不亦君子乎？
   
   # 首页社交媒体
   # socialIcons:
@@ -123,6 +137,10 @@ params:
   #   keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
+    - identifier: search
+      name: 搜索
+      url: /search/
+      weight: 5
     - identifier: categories
       name: 分类
       url: /categories/

@@ -10,11 +10,12 @@
     </span>
     <!-- busuanzi -->
     {{ if .Site.Params.busuanzi.enable -}}
-        <span id="busuanzi_container_site_pv">
-            pv <span id="busuanzi_value_site_pv"></span>
-        </span>
         <span id="busuanzi_container_site_uv">
-            uv <span id="busuanzi_value_site_uv"></span>
+            <span id="busuanzi_value_site_uv"></span>
+        </span>
+        <span>/</span>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>
         </span>
     {{- end -}}
 </footer>
